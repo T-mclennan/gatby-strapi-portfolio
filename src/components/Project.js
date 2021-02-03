@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Image from "gatsby-image"
 import { FaGithubSquare, FaShareSquare, FaAngleDoubleRight } from "react-icons/fa"
-const Project = ({description, feature_list, github, id, image, index, stack, title, url}) => { 
+const Project = ({description, feature_list, github, image, index, stack, title, url}) => { 
 
   return (
     <article className="project">
@@ -39,6 +39,17 @@ const Project = ({description, feature_list, github, id, image, index, stack, ti
   )
 }
 
-Project.propTypes = {}
+// description, feature_list, github, id, image, index, stack, title, url
+
+Project.propTypes = {
+  title: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  index: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  image: PropTypes.object.isRequired,
+  stack: PropTypes.arrayOf(PropTypes.object).isRequired,
+  feature_list: PropTypes.arrayOf(PropTypes.object).isRequired,
+}
 
 export default Project

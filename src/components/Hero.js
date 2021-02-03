@@ -18,7 +18,6 @@ const query = graphql`
 `
 const Hero = () => {
   const {file: {childImageSharp: {fluid}}} = useStaticQuery(query)
-  console.log(fluid)
   return <header className="hero">
     <div className="section-center hero-center">
       <article className="hero-info">
