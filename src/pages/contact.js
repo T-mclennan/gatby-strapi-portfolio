@@ -1,8 +1,10 @@
 import React from "react"
 import Layout from "../components/Layout"
+import SEO from '../components/SEO'
 
 const contact = () => {
   return <Layout >
+    <SEO title="Contact" description="Contact Page for Tristan Mclennan" />
     <section className="contact-page">
       <article className="contact-form">
         <h3>get in touch</h3>
@@ -12,7 +14,6 @@ const contact = () => {
             <input type="email" placeholder="email" name="email" className="form-control"/>
             <textarea name="message" style={{resize: 'none'}} name="message" placeholder="message" id="" rows="5" className="form-control"/>
             <button type="submit" className="submit-btn btn">submit here</button>
-
           </div>
         </form>
       </article>

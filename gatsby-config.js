@@ -6,12 +6,12 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Tristan Mclennan Portfolio",
+    title: "Tristan's Portfolio",
     description: "This is Tristan Mclennan's Portfolio Site",
     author: "@tmclennan",
-    twitterUsername: "@",
+    twitterUsername: "@john_doe",
     image: "/twitter-img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    siteUrl: "https://tmdesign-portfolio.netlify.app",
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -30,25 +30,23 @@ module.exports = {
       options: {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
-        //   contentTypes : `jobs`, `projects`, `blogs`,
-        //   singleType : `about`
         contentTypes: [`jobs`, `projects`, `blogs`],
         singleTypes: [`about`],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-webfonts`,
-    //   options: {
-    //     fonts: {
-    //       google: [
-    //         {
-    //           family: "Roboto",
-    //           variants: ["400", "700"],
-    //         },
-    //         { family: "Open Sans" },
-    //       ],
-    //     },
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Roboto",
+              variants: ["400", "700"],
+            },
+            { family: "Open Sans" },
+          ],
+        },
+      },
+    },
   ],
 }
