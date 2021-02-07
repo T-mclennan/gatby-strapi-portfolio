@@ -1,13 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Image from "gatsby-image"
+import Image from "gatsby-image/withIEPolyfill"
 import { Link } from "gatsby"
 const Blog = ({id, title, image, date, category, Slug, desc}) => {
   return (
     <Link to={`/blogs/${Slug}`} className="blog" key={id}>
       <article>
         {image &&
-          <Image fluid={image.childImageSharp.fluid} className="blog-img" />
+          <Image fluid={image.childImageSharp.fluid} className="blog-img" objectPosition="0% 0%" />
         }
         <div className="blog-card">
           <h4>{title || 'default title'}</h4>
