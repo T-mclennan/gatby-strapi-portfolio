@@ -4,19 +4,19 @@ export default [
   {
     id: 1,
     icon: <FaCode className="service-icon" />,
-    title: "web development",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    title: "Full stack development",
+    text: `I'm proficient with modern front-end technologies as well as building RESTful API's, databases, and other backend services.`,
   },
   {
     id: 2,
     icon: <FaSketch className="service-icon" />,
-    title: "web design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    title: "software design",
+    text: `I deeply value Object Oriented design principles and strive to write code that is readable, testable, and maintainable.`,
   },
   {
     id: 3,
     icon: <FaAndroid className="service-icon" />,
-    title: "app design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    title: "growth mindset",
+    text: `I'm extremely motivated to keep improving as a developer and I'm especially thankful for code reviews and criticism.`,
   },
 ]

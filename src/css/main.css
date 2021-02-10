@@ -686,6 +686,7 @@ Projects
   background: var(--clr-grey-9);
   color: var(--clr-grey-5);
   margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
   text-transform: uppercase;
@@ -806,6 +807,17 @@ Blog
   letter-spacing: 2px;
   font-size: 0.85rem;
 }
+
+.blog-section-center {
+  max-width: 900px;
+}
+
+@media screen and (min-width: 992px) {
+  .blog-section-center {
+    width: 95vw;
+  }
+}
+
 @media screen and (min-width: 576px) {
   .blogs-center {
     display: grid;
@@ -1014,14 +1026,20 @@ Blog Template
 .blog-template h2 {
   text-align: center;
 }
+
+.blog-template p {
+  font-size: 1.25rem;
+}
+
 .blog-template ul {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  margin-bottom: 1rem;
   display: inline-block;
 }
 .blog-template ul li {
   background: var(--clr-grey-9);
   color: var(--clr-grey-5);
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   margin: 1rem 0;
   text-transform: uppercase;
 }
@@ -1042,7 +1060,10 @@ Blog Template
   border-radius: var(--radius);
 }
 .blog-template img {
-  width: 15rem;
-  height: 15rem;
-  margin: 3rem 0;
+  /* width: 100%; */
+  height: 100%;
+  width: 100%;
+  /* height: 45rem; */
+  /* max-height: 600px; */
+  margin-bottom: 3rem;
 }

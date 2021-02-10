@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
+import Title from '../components/Title'
 import ReactMarkdown from "react-markdown"
 import SEO from '../components/SEO'
 
@@ -9,7 +10,8 @@ const ComponentName = ({data}) => {
   return <Layout >
     <SEO title={title} description={desc}/> 
     <section className="blog-template">
-      <div className="section-center">
+      <div className="section-center blog-section-center">
+        <Title title={title}/>
         <article className="blog-content">
           <ReactMarkdown source={content}/>
         </article>
