@@ -1,5 +1,5 @@
 import React from "react"
-import { FaCode, FaSketch, FaAndroid } from "react-icons/fa"
+import { FaCode, FaSketch, FaAndroid, FaSeedling } from "react-icons/fa"
 export default [
   {
     id: 1,
@@ -15,8 +15,8 @@ export default [
   },
   {
     id: 3,
-    icon: <FaAndroid className="service-icon" />,
+    icon: <FaSeedling className="service-icon" />,
     title: "growth mindset",
-    text: `I'm extremely motivated to keep improving as a developer and I'm especially thankful for code reviews and criticism.`,
+    text: `I'm extremely passionate about improving as a developer, and I'm thankful the opportuniy to receive code reviews and criticism.`,
   },
 ]
