@@ -6,9 +6,11 @@ const Blog = ({id, title, image, date, category, Slug, desc}) => {
   return (
     <Link to={`/blogs/${Slug}`} className="blog" key={id}>
       <article>
-        {image &&
-          <Image fluid={image.childImageSharp.fluid} objectPosition="0% 0%" />
-        }
+        <div className="blog-image-container">
+          {image &&
+            <Image fluid={image.childImageSharp.fluid} objectPosition="0% 0%" />
+          }
+        </div>
         <div className="blog-card">
           <h4>{title || 'default title'}</h4>
           <p>{desc}</p>

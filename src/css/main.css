@@ -779,6 +779,13 @@ Blog
   height: 15rem;
   /* height: 17.5rem; */
 }
+
+.blog-image-container {
+  max-height: 22.5rem;
+  width: 100%;
+  overflow: hidden;
+}
+
 .blog-card {
   padding: 1.5rem 1rem;
 }
@@ -830,7 +837,6 @@ Blog
 }
 @media screen and (min-width: 850px) {
   .blog-img {
-    /* height: 13.75rem; */
     height: 17.5rem;
   }
 }
