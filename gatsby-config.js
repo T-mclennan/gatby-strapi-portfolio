@@ -9,7 +9,7 @@ module.exports = {
     title: "Tristan's Portfolio",
     description: "This is Tristan Mclennan's Portfolio Site",
     author: "@tmclennan",
-    twitterUsername: "@john_doe",
+    twitterUsername: "notwitter",
     image: "/twitter-img.png",
     siteUrl: "https://tmdesign-portfolio.netlify.app",
   },
